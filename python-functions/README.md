@@ -1,0 +1,1 @@
+This project talks about functions and how to define and call a function
