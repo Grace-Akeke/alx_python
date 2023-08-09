@@ -1,11 +1,20 @@
+#!/usr/bin/env python3
 def fibonacci_sequence(n):
-    sequence = []
-    if n >= 1: #Add the first number if n >=1
-        sequence.append(0)
-    if n >= 2:
-        sequence.append(1)
-    for i in range(2, n):
-        next_num = sequence[i-1] + sequence[i-2]
-        sequence.append(next_num)
-        return sequence
-        
+   if n <= 0:
+      return []
+   elif n == 1:
+      return [0]
+   fibonacci_numbers=[0,1]
+   while len(fibonacci_numbers) < n:
+      next_number = fibonacci_numbers[-1] + fibonacci_numbers[-2]
+      if next_number <= 0:
+         return []
+   fibonacci_numbers.append(next_number)
+   return fibonacci_numbers
+if __name__ =="__main__":
+   fibonacci_sequence = __import__('4-fibonacci').fibonacci_sequence
+      
+
+   
+   
+      
