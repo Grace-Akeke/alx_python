@@ -1,5 +1,5 @@
 def raise_exception_msg(message=""):
-    class CustomException(Exception):
+    class CustomException():
         pass
     
     raise CustomException(message)
